@@ -29,7 +29,7 @@ Project Proposal:
 DATABASE STRUCTURE:
 pets_db
     pet_table
-        id INT NOT NULL AUTO_INCREMENT,
+        id INT NOT NULL AUTO_INCREMENT,<br/>
         entryDate date DEFAULT GETDATE(),
         petType VARCHAR(100) NOT NULL, (note: dog, cat, bird, horse, rabbit, lizard, etc.)
         petBreed VARCHAR(100) default 'unknown',
