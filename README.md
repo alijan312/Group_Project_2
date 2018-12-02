@@ -26,9 +26,7 @@ Project Proposal:
 * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
     Will use .env to disguise sensitve API information
 
-
 DATABASE STRUCTURE:
-
 pets_db
     pet_table
         id INT NOT NULL AUTO_INCREMENT,
