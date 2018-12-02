@@ -2,6 +2,26 @@
 
 Project Proposal:
     We will create a searchable database of pets for adoption. There are such sited existing already, but we have the overall user experience to be lacking. They could use a more appealing homepage, better explainations and, most importantly, a good searching function.
+    
+Components:
+   User Profile, Login, Pswd Form - AJ
+   Animal Entry Form - Jacob
+   Animal Search Page - Kate
+   Front End - Jacob, AJ, Kate
+   Scrummaster - Kate
+   
+Tech Stack:
+   Express
+   Sequelize
+   Passport
+   Handebars
+   MySql
+   Heroku
+   NPM
+   Moment
+   JS
+   HTML
+   CSS
 
 * Use a Node and Express Web Server;
 
@@ -52,3 +72,4 @@ pets_db<br/>
         userQuestion3 TEXT(1000) NOT NULL,<br/>
         userQuestion4 TEXT(1000) NOT NULL, (etc...)<br/>
         PRIMARY KEY ( id )<br/>
+
