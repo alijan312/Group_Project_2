@@ -30,7 +30,6 @@ DATABASE STRUCTURE:
 pets_db
     pet_table
         id INT NOT NULL AUTO_INCREMENT,
-        entryDate date DEFAULT GETDATE(),
         petType VARCHAR(100) NOT NULL, (note: dog, cat, bird, horse, rabbit, lizard, etc.)
         petBreed VARCHAR(100) default 'unknown',
         petName VARCHAR(100) NOT NULL,
@@ -43,7 +42,6 @@ pets_db
         PRIMARY KEY ( id )
     user_table
         id INT NOT NULL AUTO_INCREMENT,
-        entryDate date DEFAULT GETDATE(),
         userName VARCHAR(200) NOT NULL,
         userEmail VARCHAR(200) NOT NULL,
         userPhone INT NOT NULL,
