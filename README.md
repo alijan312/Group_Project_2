@@ -7,6 +7,7 @@ Components:
    User Profile, Login, Pswd Form - AJ
    Animal Entry Form - Jacob
    Animal Search Page - Kate
+   Landing Page - Kate
    Front End - Jacob, AJ, Kate
    Scrummaster - Kate
    
