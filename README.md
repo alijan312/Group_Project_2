@@ -27,28 +27,28 @@ Project Proposal:
     Will use .env to disguise sensitve API information
 
 DATABASE STRUCTURE:
-pets_db
-    pet_table
-        id INT NOT NULL AUTO_INCREMENT,
-        entryDate date DEFAULT GETDATE(),
-        petType VARCHAR(100) NOT NULL, (note: dog, cat, bird, horse, rabbit, lizard, etc.)
-        petBreed VARCHAR(100) default 'unknown',
-        petName VARCHAR(100) NOT NULL,
-        petAge INT NOT NULL,
-        petWeight INT NOT NULL,
-        petQuestion1 TEXT(1000) NOT NULL, (good with other animals?)
-        petQuestion2 TEXT(1000) NOT NULL,
-        petQuestion3 TEXT(1000) NOT NULL,
-        petQuestion4 TEXT(1000) NOT NULL, (etc...)
-        PRIMARY KEY ( id )
-    user_table
-        id INT NOT NULL AUTO_INCREMENT,
-        entryDate date DEFAULT GETDATE(),
-        userName VARCHAR(200) NOT NULL,
-        userEmail VARCHAR(200) NOT NULL,
-        userPhone INT NOT NULL,
-        userQuestion1 ENUM('yes','no','unsure') (interested in adopting?)
-        userQuestion2 TEXT(1000) NOT NULL,
-        userQuestion3 TEXT(1000) NOT NULL,
-        userQuestion4 TEXT(1000) NOT NULL, (etc...)
-        PRIMARY KEY ( id )
+pets_db<br/>
+    pet_table<br/>
+        id INT NOT NULL AUTO_INCREMENT,<br/>
+        entryDate date DEFAULT GETDATE(), <br/>
+        petType VARCHAR(100) NOT NULL, (note: dog, cat, bird, horse, rabbit, lizard, etc.)<br/>
+        petBreed VARCHAR(100) default 'unknown',<br/>
+        petName VARCHAR(100) NOT NULL,<br/>
+        petAge INT NOT NULL,<br/>
+        petWeight INT NOT NULL,<br/>
+        petQuestion1 TEXT(1000) NOT NULL, (good with other animals?)<br/>
+        petQuestion2 TEXT(1000) NOT NULL,<br/>
+        petQuestion3 TEXT(1000) NOT NULL,<br/>
+        petQuestion4 TEXT(1000) NOT NULL, (etc...)<br/>
+        PRIMARY KEY ( id )<br/>
+    user_table<br/>
+        id INT NOT NULL AUTO_INCREMENT,<br/>
+        entryDate date DEFAULT GETDATE(),<br/>
+        userName VARCHAR(200) NOT NULL,<br/>
+        userEmail VARCHAR(200) NOT NULL,<br/>
+        userPhone INT NOT NULL,<br/>
+        userQuestion1 ENUM('yes','no','unsure') (interested in adopting?)<br/>
+        userQuestion2 TEXT(1000) NOT NULL,<br/>
+        userQuestion3 TEXT(1000) NOT NULL,<br/>
+        userQuestion4 TEXT(1000) NOT NULL, (etc...)<br/>
+        PRIMARY KEY ( id )<br/>
