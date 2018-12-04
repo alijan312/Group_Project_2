@@ -4,11 +4,15 @@ Project Proposal:
     We will create a searchable database of pets for adoption. There are such sited existing already, but we have the overall user experience to be lacking. They could use a more appealing homepage, better explainations and, most importantly, a good searching function.
     
 Components:
-   User Profile, Login, Pswd Form - AJ
-   Animal Entry Form - Jacob
+   Landing Page - pet search page, link add a pet - Jacob
+   Rescue Profile, Login, Pswd Form - AJ
+   Back End Authentication - AJ (passport)
+   Rescue Login page - 
+   Animal Add edit delete form - Jacob
    Animal Search Page - Kate
+   Database setup - Kate
    Heroku Deployment - Jacob
-   Landing Page - Kate
+   
    Front End - Jacob, AJ, Kate
    Scrummaster - Kate
    
@@ -16,7 +20,7 @@ Tech Stack:
    Express
    Sequelize
    Passport
-   Handebars
+   Handlebars
    MySql
    Heroku
    NPM
