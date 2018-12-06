@@ -49,8 +49,9 @@ module.exports = function(sequelize, DataTypes) {
 
     Pets.associate = function(models) {
         Pets.belongsTo(models.agencyTable, {
-            foreignKey: "FK_agencyName",
-            targetKey: "agencyName"
+            foreignKey: {
+                allowNull: false
+            }
         });
     };
 
