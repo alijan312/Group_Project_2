@@ -2,13 +2,8 @@ const db = require("../models");
 
 module.exports = function(app) {
     app.get("/api/pets", function(req, res) {
-        // let query = {};
-        // if (req.query.species) {
-        //     query.SpeciesId = req.query.species_id;
-        // }
         db.Pets.findAll({
-            // where: query,
-            // include: [db.Species]
+            include: [db.Agency, db.Species]
         }).then(function(dbPets) {
             res.json(dbPets);
         });
@@ -32,6 +27,7 @@ module.exports = function(app) {
 
         db.Pets.create({
             petName: pet.petName,
+            petSex: pet.petSex,
             petBreed: pet.petBreed,
             petAge: pet.Age,
             petWeight: pet.petWeight,
@@ -41,8 +37,47 @@ module.exports = function(app) {
             petQuestion1: pet.petQuestion1,
             petQuestion2: pet.petQuestion2,
             petQuestion3: pet.petQuestion3,
-            petQuestion4: pet.petQuestion4
+            petQuestion4: pet.petQuestion4,
+            image: pet.image,
+            AgencyId: pet.AgencyId,
+            SpeciesId: pet.SpeciesId
         }).then(function(dbPet) {
+            res.json(dbPet);
+        });
+    });
+
+    app.put("/api/pets", function(req, res) {
+        const pet = req.body;
+        console.log("Update Pet:");
+        console.log(pet);
+
+        db.Agency.update({
+            petName: pet.petName,
+            petSex: pet.petSex,
+            petBreed: pet.petBreed,
+            petAge: pet.Age,
+            petWeight: pet.petWeight,
+            fixed: pet.fixed,
+            shots: pet.shots,
+            dateComeIn: pet.dateCameIn,
+            petQuestion1: pet.petQuestion1,
+            petQuestion2: pet.petQuestion2,
+            petQuestion3: pet.petQuestion3,
+            petQuestion4: pet.petQuestion4,
+            image: pet.image,
+            AgencyId: pet.AgencyId,
+            SpeciesId: pet.SpeciesId
+        }).then(function(dbPet) {
+            res.json(dbPet);
+        });
+    });
+
+    app.delete("/api/pets/:id", function(req, res) {
+        db.Pets.destroy({
+            where: {
+                id: req.params.id
+            }
+        }).then.json(function(dbPet) {
             res.json(dbPet);
         });
     });
