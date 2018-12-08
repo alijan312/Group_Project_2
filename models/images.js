@@ -3,10 +3,10 @@ module.exports = function(sequelize, DataTypes) {
         path: DataTypes.STRING
     });
 
-    Images.associate = function(models) {
-        Images.hasMany(models.Pets, {
-            onDelete: "cascade"
-        });
-    };
+    // Images.associate = function(models) {
+    //     Images.hasMany(models.Pets, {
+    //         onDelete: "cascade"
+    //     });
+    // };
     return Images;
 };
