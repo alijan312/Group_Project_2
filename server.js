@@ -16,8 +16,9 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 require("./routes/html-routes.js")(app);
-// require("./routes/author-api-routes.js")(app);
-// require("./routes/post-api-routes.js")(app);
+require("./routes/pets-api-routes.js")(app);
+require("./routes/agency-api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
 db.sequelize.sync({}).then(function() {
     app.listen(PORT, function() {
