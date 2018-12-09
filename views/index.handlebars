@@ -1,67 +1,30 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Who Saves Who?</h1>
-      <p>a furry, scaley, squeaky, meowing, jumping, slithering, FRIEND</p>
-      <br>
-      <p>...saving YOU</p>
-        
-        <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Find a...
-            <span class="caret"></span>
-          </button>
-        
-          <ul class="dropdown-menu">
-            <li><a href="#" class="label"> {{this.type}}</a></li>
-          </ul>
-        </div>
+<main class="main">
 
-  </div>
-</div>
+    {{!-- Slider partial section --}}
+    {{> slider-partial}}
 
-{{!-- animal images across page --}}
-<div class="row">
-  <div class="col-xs-6 col-md-3">
-    <a href="#" class="thumbnail">
-      <img src="lizard.jpg" alt="lizard">
-      <img src="loveMedog.jpg" alt="dog">
-      <img src="birds.jpg" alt="birds">
-      <img src="adoptCat.jpg" alt="cat">
-    </a>
-  </div>
-  ...
-</div>
+    <div class="mb-5"></div><!-- margin -->
 
-<h2>Pet Searcher</h2>
+    {{!-- Featured products partial section --}}
+    {{> about-us-partial}}
 
-<div class="container">
-  <h2>Select an age range:</h2>
-  <form>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Under 1 year</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">1 - 5 years</label>
-    </div>
-    <div class="checkbox disabled">
-      <label><input type="checkbox" value="">5 years and over</label>
-    </div>
-  </form>
+    <div class="mb-5"></div><!-- margin -->
 
-  <h2>Select a weight range:</h2>
-  <form>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">Under 10 pounds</label>
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox" value="">10-25 pounds</label>
-    </div>
-    <div class="checkbox disabled">
-      <label><input type="checkbox" value="">25-50 pounds</label>
-    </div>
-        <div class="checkbox disabled">
-      <label><input type="checkbox" value="">Over 50 pounds</label>
-    </div>
-  </form>
+    {{!-- Featured products partial section --}}
+    {{> gallery-partial}}            
 
-</div>
+    <div class="mb-5"></div><!-- margin -->
+
+    {{!-- Featured products partial section --}}
+    {{> team-partial}}            
+
+    <div class="mb-5"></div><!-- margin -->
+
+    {{!-- Featured products partial section --}}
+    {{> subscribe-partial}}            
+
+    <div class="mb-5"></div><!-- margin -->
+
+    
+            
+</main><!-- End .main -->
