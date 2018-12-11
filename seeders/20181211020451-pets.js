@@ -24,7 +24,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2017-12-07",
-                    AgencyId: 2,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -37,7 +36,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2016-11-06",
-                    AgencyId: 1,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -50,7 +48,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2018-10-07",
-                    AgencyId: 3,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -63,7 +60,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2016-11-08",
-                    AgencyId: 4,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -76,7 +72,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2018-05-12",
-                    AgencyId: 1,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -89,7 +84,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2018-07-25",
-                    AgencyId: 2,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -102,7 +96,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2017-03-07",
-                    AgencyId: 3,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
@@ -115,7 +108,6 @@ module.exports = {
                     fixed: true,
                     shots: true,
                     dateCameIn: "2016-01-07",
-                    AgencyId: 4,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 }

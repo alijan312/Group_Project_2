@@ -16,13 +16,19 @@ module.exports = {
             "Species",
             [
                 {
-                    type: "dog"
+                    type: "dog",
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    type: "cat"
+                    type: "cat",
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    type: "other"
+                    type: "other",
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
                 }
             ],
             {}
