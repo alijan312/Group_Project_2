@@ -16,35 +16,106 @@ module.exports = {
             "Pets",
             [
                 {
-                    agencyName: "Houston",
-                    agencyPhone: 8127896478,
-                    agencyAddress: "1 Main street",
-                    agencyCity: "Houston",
-                    agencyState: "TX",
-                    agencyZip: 77031,
-                    contactEmail: "houston@houston.com",
+                    petName: "Charlie",
+                    petSex: "Male",
+                    petBreed: "Bulldog",
+                    petAge: 2,
+                    petWeight: 15,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2017-12-07",
+                    AgencyId: 2,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    agencyName: "Austin",
-                    agencyPhone: 8127898374,
-                    agencyAddress: "1 Post Oak street",
-                    agencyCity: "Austin",
-                    agencyState: "TX",
-                    agencyZip: 77645,
-                    contactEmail: "austin@austin.com",
+                    petName: "Fluffy",
+                    petSex: "Female",
+                    petBreed: "Poodle",
+                    petAge: 3,
+                    petWeight: 20,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2016-11-06",
+                    AgencyId: 1,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    agencyName: "Dallas",
-                    agencyPhone: 8127891425,
-                    agencyAddress: "1 Jefferson street",
-                    agencyCity: "Dallas",
-                    agencyState: "TX",
-                    agencyZip: 78354,
-                    contactEmail: "dallas@dallas.com",
+                    petName: "Lucky",
+                    petSex: "Male",
+                    petBreed: "Husky",
+                    petAge: 1,
+                    petWeight: 10,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2018-10-07",
+                    AgencyId: 3,
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
+                },
+                {
+                    petName: "Cutesy",
+                    petSex: "Female",
+                    petBreed: "Beagle",
+                    petAge: 2,
+                    petWeight: 20,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2016-11-08",
+                    AgencyId: 4,
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
+                },
+                {
+                    petName: "Jackie",
+                    petSex: "Female",
+                    petBreed: "Apso",
+                    petAge: 4,
+                    petWeight: 25,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2018-05-12",
+                    AgencyId: 1,
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
+                },
+                {
+                    petName: "Joanne",
+                    petSex: "Female",
+                    petBreed: "Pug",
+                    petAge: 1,
+                    petWeight: 13,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2018-07-25",
+                    AgencyId: 2,
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
+                },
+                {
+                    petName: "Magdalene",
+                    petSex: "Female",
+                    petBreed: "Shih Tzu",
+                    petAge: 2,
+                    petWeight: 25,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2017-03-07",
+                    AgencyId: 3,
+                    createdAt: Sequelize.literal("NOW()"),
+                    updatedAt: Sequelize.literal("NOW()")
+                },
+                {
+                    petName: "Doggy",
+                    petSex: "Male",
+                    petBreed: "Shepherd",
+                    petAge: 3,
+                    petWeight: 30,
+                    fixed: true,
+                    shots: true,
+                    dateCameIn: "2016-01-07",
+                    AgencyId: 4,
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 }
@@ -61,6 +132,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-        return queryInterface.bulkDelete("Agencies", null, {});
+        return queryInterface.bulkDelete("Pets", null, {});
     }
 };
