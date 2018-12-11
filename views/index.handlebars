@@ -1,37 +1,30 @@
-<h1>Who Saves Who</h1>
+<main class="main">
 
-<p>YOU saving...</p>
-    <p>a furry, scaley, squeaky, meowing, jumping, slithering, FRIEND</p>
-        <p>...saving YOU</p>
+    {{!-- Slider partial section --}}
+    {{!-- {{> slider-partial}} --}}
 
-<!-- Pass in data from server.js -->
-<ul>
-  {{#each quotes}}
-  	<li>
-  		<p><span class="label">ID:</span> {{this.id}}</p>
-      <p><span class="label">Quote:</span> {{this.quote}}</p>
-      <p><span class="label">Author:</span> {{this.author}}</p>
+    <div class="mb-5"></div><!-- margin -->
 
-      <button data-id="{{this.id}}" class="delquote">Delete</button>
+    {{!-- Featured products partial section --}}
+    {{> about-us-partial}}
 
-      <a href="/{{this.id}}">Update this quote</a>
-  	</li>
-  {{/each}}
-</ul>
+    <div class="mb-5"></div><!-- margin -->
 
-<h2>Pet Searcher</h2>
+    {{!-- Featured products partial section --}}
+    {{> gallery-partial}}            
 
-<form class="create-form">
+    <div class="mb-5"></div><!-- margin -->
 
-  <div class="form-group">
-    <label for="auth">Pet Type:</label>
-    <input type="text" id="auth" name="author">
-  </div>
+    {{!-- Featured products partial section --}}
+    {{> team-partial}}            
 
-  <div class="form-group">
-    <label for="quo">Quote:</label>
-    <textarea id="quo" name="quote" rows="8" cols="40"></textarea>
-  </div>
+    <div class="mb-5"></div><!-- margin -->
 
-  <button type="submit">Add Quote</button>
-</form>
+    {{!-- Featured products partial section --}}
+    {{!-- {{> subscribe-partial}}             --}}
+
+    <div class="mb-5"></div><!-- margin -->
+
+    
+            
+</main><!-- End .main -->
