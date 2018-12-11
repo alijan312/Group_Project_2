@@ -1,241 +1,46 @@
 <div class="page">
-         <div class="container block-padding pt-0">
-            <div class="col-lg-8 offset-lg-2 text-center">
-               <h3>Find a new furry Friend</h3>
-               <p>Aliquam erat lorem ipsum volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
+    <div class="container block-padding pt-0">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <h3>Find a new furry Friend</h3>
+            <p>Aliquam erat lorem ipsum volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo
+                sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo
+                a dolor placerat, nec elementum ipsum convall.</p>
+        </div>
+        <!-- First row: Adopt a pet -->
+        <div class="row mt-5">
+            <!-- Pet  -->
+            <div class="adopt-card col-md-6 col-xl-3 res-margin">
+                {{#each petInfo}}
+                <div class="card bg-light-custom">
+                    <div class="thumbnail text-center">
+                        <!-- Image -->
+                        <img src="{{this.image}}" class="border-irregular1 img-fluid" alt="">
+                        <!-- Name -->
+                        <div class="caption-adoption">
+                            <h6 class="adoption-header">{{this.petName}}</h6>
+                            <!-- List -->
+                            <ul class="list-unstyled">
+                                <li>
+                                    <strong>Gender:</strong> {{this.petSex}}</li>
+                                <li>
+                                    <strong>Neutered: </strong> {{this.fixed}}</li>
+                                <li>
+                                    <strong>Age:</strong> {{this.petAge}}</li>
+                            </ul>
+                            <!-- Buttons -->
+                            <div class="text-center">
+                                <a href="adoption-single.html" class="btn btn-primary">More Info</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /thumbnail -->
+                </div>
+                <!-- /card -->
+                {{/each}}
             </div>
-            <!-- First row: Adopt a pet -->
-            <div class="row mt-5">
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption1.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Fluffy</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Female</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption2.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Charlie</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption3.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Lucky</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 5 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption4.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Magdalene</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Female</li>
-                              <li><strong>Neutered: </strong> No</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-            </div>
-            <!-- /row -->      <!-- Second row: Adopt a pet -->
-            <div class="row mt-5">
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption5.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Joanne</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Female</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 5 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption6.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Cutesy</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong>Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 3 months</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption7.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Kittie</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong>Male</li>
-                              <li><strong>Neutered: </strong>No</li>
-                              <li><strong>Age:</strong> 1 year</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption8.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Jack</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 8 months</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-            </div>
-            <!-- /row -->
-            <div class="col-md-12 mt-5">
-               <!-- pagination -->
-               <nav aria-label="pagination">
-                  <ul class="pagination float-right">
-                     <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                     <li class="page-item"><a class="page-link" href="#">2</a></li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
-                     <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-               </nav>
-               <!-- /nav -->
-            </div>
+            <!-- /adopt-card -->
+            <!-- /pet -->
             <!-- /col-md -->
-         </div>
-         <!-- /container -->
-      </div>
+        </div>
+        <!-- /container -->
+    </div>

@@ -54,7 +54,25 @@
 								<label for="shots">Shots</label><br>
 								<input type="radio" name="shots" id="shots" value="true"> Yes
                                 <input type="radio" name="shots" id="shots" value="false"> No
-							</div><!-- End .form-group -->							
+							</div><!-- End .form-group -->				
+
+                            <div class="form-group required-field">
+								<label for="AgencyId">Agency</label><br>
+								<select name="AgencyId">
+									{{#each agencyInfo}}
+										<option value="{{this.id}}">{{this.agencyName}}</option>
+									{{/each}}
+								</select>
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="SpeciesId">Species</label><br>
+								<select name="SpeciesId">
+									{{#each speciesInfo}}
+										<option value="{{this.id}}">{{this.type}}</option>
+									{{/each}}
+								</select>
+							</div><!-- End .form-group -->				
 
 							<div class="form-footer">
 								<button type="submit" class="btn btn-primary">Submit</button>
