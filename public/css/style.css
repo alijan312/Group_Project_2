@@ -29,6 +29,15 @@ Last change: 8th June 2018
      color:#808080;
 }
 
+ .aboutUs {
+    padding-top: 40px;
+    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+ }
+
  p{
      font-size: 16px;
      line-height:1.6;
@@ -1183,8 +1192,7 @@ Last change: 8th June 2018
      margin-top: 10px;
 }
 /* border */
- .border-irregular1{
-     border-radius: 155px 45px 225px 75px/15px 125px 15px 155px;
+
 }
  .border-irregular2{
      border-radius: 75px 125px 45px 155px/155px 15px 155px 15px;
@@ -1309,7 +1317,6 @@ Last change: 8th June 2018
 }
  .section-heading {
      text-align:center;
-     margin-bottom:100px;
 }
  .section-heading:before {
      content: "\f126";

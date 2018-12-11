@@ -5,7 +5,7 @@ module.exports = function(sequelize, DataTypes) {
         petSex: DataTypes.STRING,
         petBreed: DataTypes.STRING,
         petAge: DataTypes.INTEGER,
-        petWeight: DataTypes.INTEGER,
+        petWeight: DataTypes.STRING,
         fixed: DataTypes.BOOLEAN,
         shots: DataTypes.BOOLEAN,
         dateCameIn: DataTypes.DATE,
