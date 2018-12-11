@@ -1,13 +1,28 @@
+const db = require("../models");
+
 module.exports = function(app) {
     app.get("/", function(req, res) {
         res.render("index", { title: "Who Saves Who!" });
     });
 
     app.get("/adoption", function(req, res) {
-        res.render("adoption", { title: "Adotp Don't Shop" });
+        db.Pets.findAll({}).then(function(petData) {
+            res.render("adoption", { petInfo: petData });
+        });
     });
 
     app.get("/add-pet", function(req, res) {
-        res.render("add-pet", { title: "Add Fur Baby" });
+        db.Agency.findAll({}).then(function(agencyData) {
+            db.Species.findAll({}).then(function(speciesData) {
+                res.render("add-pet", {
+                    speciesInfo: speciesData,
+                    agencyInfo: agencyData
+                });
+            });
+        });
+    });
+
+    app.get("/add-agency", function(req, res) {
+        res.render("add-agency", { title: "Agency" });
     });
 };
