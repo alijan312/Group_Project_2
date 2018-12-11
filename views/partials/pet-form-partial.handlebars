@@ -1,0 +1,69 @@
+ <div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<h2>Add a New Fur Baby</h2>
+
+						<form action="/api/pets" method="POST" enctype="multiport/form-data">
+							<div class="form-group required-field">
+                                <br>
+								<label for="petName">Name</label>
+								<input type="text" class="form-control" id="petName" name="petName" required>
+							</div><!-- End .form-group -->
+
+							<div class="form-group required-field">
+								<label for="image">Image</label>
+                			<div class="file-field file-path validate"></div>
+								<input type="file" class="form-control file-path validate" id="image" name="image" required>
+							</div><!-- End .form-group -->
+
+							<div class="form-group required-field">
+								<label for="petBreed">Breed</label>
+								<input type="text" class="form-control" id="petBreed" name="petBreed" required>
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="petAge">Age</label>
+								<input type="number" class="form-control" id="petAge" name="petAge" required>
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="dateComeIn">Date Came In</label>
+								<input type="date" class="form-control" id="dateComeIn" name="dateComeIn" required>
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="petSex">Sex</label><br>
+								<input type="radio" name="petSex" id="petSex" value="male"> Male
+                                <input type="radio" name="petSex" id="petSex" value="female"> Female
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="petWeight">Size</label><br>
+								<input type="radio" name="petWeight" id="petWeight" value="small"> Small
+                                <input type="radio" name="petWeight" id="petWeight" value="medium"> Medium
+                                <input type="radio" name="petWeight" id="petWeight" value="large"> Large
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="fixed">Fixed</label><br>
+								<input type="radio" name="fixed" id="fixed" value="true"> Yes
+                                <input type="radio" name="fixed" id="fixed" value="false"> No
+							</div><!-- End .form-group -->
+
+                            <div class="form-group required-field">
+								<label for="shots">Shots</label><br>
+								<input type="radio" name="shots" id="shots" value="true"> Yes
+                                <input type="radio" name="shots" id="shots" value="false"> No
+							</div><!-- End .form-group -->							
+
+							<div class="form-footer">
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</div><!-- End .form-footer -->
+						</form>
+					</div><!-- End .col-md-8 -->
+					
+				</div><!-- End .row -->
+			</div><!-- End .container -->
+
+			
+    <div class="mb-8"></div><!-- margin -->
