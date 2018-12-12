@@ -81,4 +81,26 @@ module.exports = function(app) {
             res.json(dbPet);
         });
     });
+
+    app.post("/api/species", function(req, res) {
+        const species = req.body;
+        console.log("New species:");
+        console.log(species);
+
+        db.Species.create({
+            type: species.type
+        }).then(function(dbSpecies) {
+            res.json(dbSpecies);
+        });
+    });
+
+    app.delete("/api/species/:id", function(req, res) {
+        db.Species.destroy({
+            where: {
+                id: req.params.id
+            }
+        }).then.json(function(dbSpecies) {
+            res.json(dbSpecies);
+        });
+    });
 };
