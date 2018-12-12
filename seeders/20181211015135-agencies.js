@@ -13,23 +13,38 @@ module.exports = {
       }], {});
     */
         return queryInterface.bulkInsert(
-            "UserRoles",
+            "Agencies",
             [
                 {
-                    RoleId: 3,
-                    UserId: 1,
+                    agencyName: "Houston",
+                    agencyPhone: 8127896478,
+                    agencyAddress: "1 Main street",
+                    agencyCity: "Houston",
+                    agencyState: "TX",
+                    agencyZip: 77031,
+                    contactEmail: "houston@houston.com",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    RoleId: 2,
-                    UserId: 2,
+                    agencyName: "Austin",
+                    agencyPhone: 8127898374,
+                    agencyAddress: "1 Post Oak street",
+                    agencyCity: "Austin",
+                    agencyState: "TX",
+                    agencyZip: 77645,
+                    contactEmail: "austin@austin.com",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    RoleId: 1,
-                    UserId: 3,
+                    agencyName: "Dallas",
+                    agencyPhone: 8127891425,
+                    agencyAddress: "1 Jefferson street",
+                    agencyCity: "Dallas",
+                    agencyState: "TX",
+                    agencyZip: 78354,
+                    contactEmail: "dallas@dallas.com",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 }
@@ -46,6 +61,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-        return queryInterface.bulkDelete("UserRoles", null, {});
+        return queryInterface.bulkDelete("Agencies", null, {});
     }
 };
