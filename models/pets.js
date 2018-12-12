@@ -18,11 +18,15 @@ module.exports = function(sequelize, DataTypes) {
 
     Pets.associate = function(models) {
         Pets.belongsTo(models.Agency, {
-            foreignKey: "fk_agency"
+            foreignKey: {
+                allowNull: false
+            }
         });
 
         Pets.belongsTo(models.Species, {
-            foreignKey: "fk_species"
+            foreignKey: {
+                allowNull: false
+            }
         });
     };
 

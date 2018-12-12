@@ -11,6 +11,12 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/agency", function(req, res) {
+        db.Agency.findAll({}).then(function(agencyData) {
+            res.render("view-agency", { agencyInfo: agencyData });
+        });
+    });
+
     app.get("/add-pet", function(req, res) {
         db.Agency.findAll({}).then(function(agencyData) {
             db.Species.findAll({}).then(function(speciesData) {
