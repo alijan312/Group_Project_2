@@ -25,7 +25,8 @@ module.exports = function(sequelize, DataTypes) {
 
         Pets.belongsTo(models.Species, {
             foreignKey: {
-                allowNull: false
+                allowNull: false,
+                defaultValue: "Dog"
             }
         });
     };
