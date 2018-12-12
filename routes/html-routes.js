@@ -31,4 +31,12 @@ module.exports = function(app) {
     app.get("/add-agency", function(req, res) {
         res.render("add-agency", { title: "Agency" });
     });
+
+    app.get("/api/pets", function(req, res) {
+        res.redirect("../");
+    });
+
+    app.get("/api/agencies", function(req, res) {
+        res.redirect("../");
+    });
 };
