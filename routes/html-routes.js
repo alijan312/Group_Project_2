@@ -11,6 +11,12 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/agency", function(req, res) {
+        db.Agency.findAll({}).then(function(agencyData) {
+            res.render("view-agency", { agencyInfo: agencyData });
+        });
+    });
+
     app.get("/add-pet", function(req, res) {
         db.Agency.findAll({}).then(function(agencyData) {
             db.Species.findAll({}).then(function(speciesData) {
@@ -24,5 +30,13 @@ module.exports = function(app) {
 
     app.get("/add-agency", function(req, res) {
         res.render("add-agency", { title: "Agency" });
+    });
+
+    app.get("/api/pets", function(req, res) {
+        res.redirect("../");
+    });
+
+    app.get("/api/agencies", function(req, res) {
+        res.redirect("../");
     });
 };

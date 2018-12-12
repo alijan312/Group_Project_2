@@ -13,23 +13,20 @@ module.exports = {
       }], {});
     */
         return queryInterface.bulkInsert(
-            "UserRoles",
+            "Species",
             [
                 {
-                    RoleId: 3,
-                    UserId: 1,
+                    type: "Dog",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    RoleId: 2,
-                    UserId: 2,
+                    type: "Cat",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 },
                 {
-                    RoleId: 1,
-                    UserId: 3,
+                    type: "Other",
                     createdAt: Sequelize.literal("NOW()"),
                     updatedAt: Sequelize.literal("NOW()")
                 }
@@ -46,6 +43,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('People', null, {});
     */
-        return queryInterface.bulkDelete("UserRoles", null, {});
+        return queryInterface.bulkDelete("Species", null, {});
     }
 };
