@@ -34,8 +34,8 @@ module.exports = function(app) {
             contactEmail: agency.contactEmail,
             contactPswd: agency.contactPswd,
             agencyQuestion4: agency.agencyQuestion4
-        }).then(function(dbAgency) {
-            res.json(dbAgency);
+        }).then(function() {
+            res.redirect("/add-pet");
         });
     });
 

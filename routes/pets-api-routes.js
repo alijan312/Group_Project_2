@@ -41,8 +41,8 @@ module.exports = function(app) {
             image: pet.image,
             AgencyId: pet.AgencyId,
             SpeciesId: pet.SpeciesId
-        }).then(function(dbPet) {
-            res.json(dbPet);
+        }).then(function() {
+            res.redirect("/adoption");
         });
     });
 
